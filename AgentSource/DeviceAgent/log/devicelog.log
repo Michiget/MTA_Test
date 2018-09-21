@@ -1,0 +1,26 @@
+[2018-07-13 14:33:43] [AnsiLog.java-  69] +-+-+-+-+-+-+-+-+-+ [DeviceAgent - HYUNDAI AUTOEVER - Version: 1.16] +-+-+-+-+-+-+-+-+-+
+[2018-07-13 14:33:44] [AnsiLog.java- 110] [INFO2-1000] [SM-N950N] The MIRROR-MODULE has been ALREADY INSTALLED on android.
+[2018-07-13 14:33:44] [AnsiLog.java- 110] [INFO2-1002] [SM-N950N] The AGENT-SERVICE-MODULE(VersionCode: 9) has been ALREADY INSTALLED on android.
+[2018-07-13 14:33:44] [AnsiLog.java- 110] [INFO2-1003] [SM-N950N] The KOR_KBD-MODULE(VersionCode: 7) has been ALREADY INSTALLED on android.
+[2018-07-13 14:33:44] [AnsiLog.java- 116] [INFO3-0000] [SM-N950N] Window info: Window [displayId=1, name=samsung-sm_n950n-ce12171c1bc27c250c7e, serial=ce12171c1bc27c250c7e, model=SM-N950N, sensor=false, isInputRotation=false, rotation=0, density=560, dpiX=515.154, dpiY=518.51, physicalWidth=1080, physicalHeight=2220, currentWidth=1080, currentHeight=2220, appWidth=1080, appHeight=2220, virtualWidth=540, virtualHeight=1110, battery=2, memory(kb)=5474772, isWifi=false, wifiAP=]
+[2018-07-13 14:33:44] [AnsiLog.java-  98] [INFO1-1005] [SM-N950N] Run the MIRROR-MODULE of Android.
+[2018-07-13 14:33:45] [AnsiLog.java-  98] [INFO1-1006] [SM-N950N] Run the TOUCH-MODULE of Android.
+[2018-07-13 14:33:47] [AnsiLog.java-  98] [INFO1-1008] [SM-N950N] Run the AGENT-MODULE of Android.
+[2018-07-13 14:33:47] [AnsiLog.java-  98] [INFO1-1007] [SM-N950N] Run the SERVICE-MODULE of Android.
+[2018-07-13 14:33:48] [AnsiLog.java-  86] The Connected DEVICES is :     
+[2018-07-13 14:33:48] [AnsiLog.java-  86] SM-N950N : ce12171c1bc27c250c7e
+[2018-07-13 14:33:48] [AnsiLog.java-  86] The Count is [1].              
+[2018-07-13 14:33:48] [AnsiLog.java-  69] +-+-+-+-+-+-+-+-+-+ [DeviceAgent - HYUNDAI AUTOEVER - Version: 1.16] +-+-+-+-+-+-+-+-+-+
+[2018-07-13 14:35:24] [AnsiLog.java-  69] +-+-+-+-+-+-+-+-+-+ [DeviceAgent - HYUNDAI AUTOEVER - Version: 1.16] +-+-+-+-+-+-+-+-+-+
+[2018-07-13 14:35:25] [AnsiLog.java- 110] [INFO2-1000] [SM-N950N] The MIRROR-MODULE has been ALREADY INSTALLED on android.
+[2018-07-13 14:35:25] [AnsiLog.java- 110] [INFO2-1002] [SM-N950N] The AGENT-SERVICE-MODULE(VersionCode: 9) has been ALREADY INSTALLED on android.
+[2018-07-13 14:35:25] [AnsiLog.java- 110] [INFO2-1003] [SM-N950N] The KOR_KBD-MODULE(VersionCode: 7) has been ALREADY INSTALLED on android.
+[2018-07-13 14:35:25] [AnsiLog.java- 116] [INFO3-0000] [SM-N950N] Window info: Window [displayId=1, name=samsung-sm_n950n-ce12171c1bc27c250c7e, serial=ce12171c1bc27c250c7e, model=SM-N950N, sensor=false, isInputRotation=false, rotation=0, density=560, dpiX=515.154, dpiY=518.51, physicalWidth=1080, physicalHeight=2220, currentWidth=1080, currentHeight=2220, appWidth=1080, appHeight=2220, virtualWidth=540, virtualHeight=1110, battery=2, memory(kb)=5474772, isWifi=false, wifiAP=]
+[2018-07-13 14:35:26] [AnsiLog.java-  98] [INFO1-1005] [SM-N950N] Run the MIRROR-MODULE of Android.
+[2018-07-13 14:35:26] [AnsiLog.java-  98] [INFO1-1006] [SM-N950N] Run the TOUCH-MODULE of Android.
+[2018-07-13 14:35:27] [AnsiLog.java-  98] [INFO1-1008] [SM-N950N] Run the AGENT-MODULE of Android.
+[2018-07-13 14:35:28] [AnsiLog.java-  98] [INFO1-1007] [SM-N950N] Run the SERVICE-MODULE of Android.
+[2018-07-13 14:35:28] [AnsiLog.java-  86] The Connected DEVICES is :     
+[2018-07-13 14:35:28] [AnsiLog.java-  86] SM-N950N : ce12171c1bc27c250c7e
+[2018-07-13 14:35:28] [AnsiLog.java-  86] The Count is [1].              
+[2018-07-13 14:35:28] [AnsiLog.java-  69] +-+-+-+-+-+-+-+-+-+ [DeviceAgent - HYUNDAI AUTOEVER - Version: 1.16] +-+-+-+-+-+-+-+-+-+

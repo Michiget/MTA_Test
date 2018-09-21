@@ -1,0 +1,11 @@
+{
+  "use_opengl": true,		// <= true이면 opengl를 사용하여 이미지 비교 및 크기 변환을 합니다.
+  "agent_name": "local_agent1",	// agent 명칭(local이라는 명칭이 포함되면 자동으로 내부망IP를 구해서 web server에 업데이트합니다.)
+  "agent_ip": 192.168.10.42",	// agent_ip key가 있으면 자동으로 IP를 구하지 않고 설정된 agent_ip로 web server에 업데이트합니다.
+  "use_set_device": true,	// <= true이면 아래 url_set_device url로 장치 기본 정보를 web server에 업데이트합니다.
+  "url_set_device": "http://116.193.89.47/amt/set_devices.php", // web server에 업데이트할 url page(마지막 page까지 포함해야 합니다.)
+  "use_set_result": true,	// <= true이면 아래 url_set_result url로 스크립트 실행 결과를 보냅니다.
+  "url_set_result": "http://116.193.89.47/amt/set_result.php",  // web server에 script 실행 결과를 업로드할 url page(마지막 page까지 포함해야 합니다.)
+  "url_get_app": "http://116.193.89.47/amt/get_app.php", // web server로부터 app을 다운로드할 url
+  "url_set_log": "http://116.193.89.47/amt/set_log.php", // web server에 shell 실행 결과를 업로드할 url
+}

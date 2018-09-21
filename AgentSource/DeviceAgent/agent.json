@@ -1,0 +1,10 @@
+{
+  "use_opengl": true,
+  "agent_name": "local_agent1",
+  "use_set_device": true,
+  "url_set_device": "http://116.193.89.47/amt/set_devices.php",
+  "use_set_result": true,
+  "url_set_result": "http://116.193.89.47/amt/set_result.php",
+  "url_get_app": "http://116.193.89.47/amt/get_app.php",
+  "url_set_log": "http://116.193.89.47/amt/set_log.php",
+}

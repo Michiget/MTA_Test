@@ -1,0 +1,78 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+import org.gradle.internal.os.OperatingSystem; 
+
+mainClassName = 'com.hyundai.autoever.mirror.Main'
+sourceCompatibility = 1.8
+version = '1.0'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+    maven {
+        url "http://repo1.maven.org/maven2"
+        artifactUrls "http://labs.consol.de/maven/repository"
+//        artifactUrls "http://mvn.is.inf.uni-due.de:8081/nexus/content/repositories/atunes-dependencies"
+    }
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile 'commons-configuration:commons-configuration:1.9'
+    compile 'org.apache.commons:commons-compress:1.14'
+    compile 'org.testng:testng:6.8.13'
+	compile 'log4j:log4j:1.2.17'
+	compile group: 'org.fusesource.jansi', name: 'jansi', version: '1.8'
+	compile 'com.android.tools.ddms:ddmlib:25.3.0'
+	compile group: 'org.json', name: 'json', version: '20090211'
+	compile 'commons-io:commons-io:2.5'
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+	compile group: 'com.github.axet', name: 'desktop', version: '2.3.2'
+	
+	compile group: 'jxgrabkey', name: 'jxgrabkey', version: '1.0'
+	compile ( group: 'com.sikulix', name: 'sikulixapi', version: '1.1.0') {
+        exclude group: 'com.sikulix', module: '${sikulix.libs}'
+    }
+    
+    if (OperatingSystem.current().isWindows()) {
+        println 'Setting sikuli libs to Windows'
+        compile ( group: 'com.sikulix', name: 'sikulixlibswin', version: '1.1.0')
+    } else if ( OperatingSystem.current().isLinux() ) {
+        println 'Setting sikuli libs to Linux'
+        compile ( group: 'com.sikulix', name: 'sikulixlibslux', version: '1.1.0')
+    } else if ( OperatingSystem.current().isMacOsX() ) {
+        println 'Setting sikuli libs to Mac'
+        compile ( group: 'com.sikulix', name: 'sikulixlibsmac', version: '1.1.0')
+    } else {
+        throw new Exception('Unknown OS')
+    }
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+jar {
+	archiveName = "MirrorAgent.jar"
+	destinationDir = file(".")
+	
+	from {
+        configurations.runtime.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    manifest {
+        attributes 'Main-Class': "com.hyundai.autoever.mirror.Main"
+    }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+}
